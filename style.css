@@ -1,0 +1,68 @@
+button{
+    position: relative;
+    width: 50px;
+    height: 20px;
+    align-self: center;
+    z-index: 5;
+}
+.slider{
+    margin: 0 auto;
+    width: 600px;
+    height: 320px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider_area{
+    align-self: center;
+    width: 400px;
+    height: 100%;
+    border: 1px solid blue;
+    display: flex;
+    overflow: hidden;
+}
+.slider_item1, .slider_item2,.slider_item3{
+    width: 400px;
+    height: 100%;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative; 
+    left: -405px;
+}
+.slider_item1{
+}
+.sliderCard{
+    width: 126px;
+    height: 300px;
+    align-self: center;
+    border: 1px solid rgb(14, 14, 13);
+}
+.card1{
+    background-color: blue;
+    margin-left: 10px;
+}
+.card2{
+    background-color: rgb(33, 206, 90);
+    margin-left: 10px;
+}
+.card3{
+    margin-left: 10px;
+    background-color: rgb(119, 33, 93);
+}
+
+.moveL{
+    animation: move-left ;
+    animation-duration: 4s;
+}
+@keyframes move-left {
+    from {     
+        left: -405px;   
+      }   
+      to {
+        left: -0px;
+       }
+}
